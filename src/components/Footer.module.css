@@ -31,6 +31,16 @@
   box-shadow: 0 15px 40px rgba(0, 122, 255, 0.6);
 }
 
+.description {
+  margin-top: 2.5rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .sitemap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

@@ -6,20 +6,20 @@ import styles from './Features.module.css';
 
 const features = [
   {
-    title: "Visão Financeira Absoluta",
-    description: "Acompanhe o Capital Total Investido e o Custo por m² atual em tempo real, com comparativos precisos de mercado.",
+    title: "Gestão Financeira de Obras",
+    description: "Acompanhe o Capital Total Investido e o Custo por m² em tempo real, com comparativos precisos de mercado.",
     icon: <BarChart3 size={32} />,
     color: "blue"
   },
   {
-    title: "Previsibilidade de Prazos",
-    description: "Mantenha o status do seu prazo sempre visível. Elimine surpresas e garanta entregas no tempo certo.",
+    title: "Cronograma e Prazos",
+    description: "Mantenha o status do seu prazo sempre visível. Elimine atrasos e garanta entregas no tempo planejado.",
     icon: <Clock size={32} />,
     color: "green"
   },
   {
-    title: "Maximização de ROI",
-    description: "Gráficos inteligentes de Orçado vs. Realizado para que você saiba exatamente para onde vai cada centavo.",
+    title: "KPIs e ROI Imobiliário",
+    description: "Gráficos inteligentes de Orçado vs. Realizado para maximizar a rentabilidade do seu investimento.",
     icon: <TrendingUp size={32} />,
     color: "blue"
   }

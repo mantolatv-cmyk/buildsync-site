@@ -22,13 +22,13 @@ const Hero = () => {
       <div className={`container ${styles.content}`}>
         <div className={styles.textContent}>
           <h1 className="animate-fade-in">
-            O Controle Executivo da Sua Obra, <br />
-            <span>Agora em Suas Mãos.</span>
+            Inteligência em <span>Gestão de Obras</span> <br />
+            de Alto Padrão.
           </h1>
           <p className="animate-fade-in">
-            Transforme a gestão do seu projeto de construção com o dashboard definitivo. 
-            Do capital total investido ao ROI projetado, o BuildSync traz previsibilidade 
-            de alto padrão para pequenos construtores e projetos residenciais exclusivos.
+            O BuildSync é o dashboard definitivo para construtores e investidores imobiliários. 
+            Do capital total investido ao ROI projetado, garanta rentabilidade e 
+            previsibilidade absoluta em seus projetos residenciais de luxo.
           </p>
           <div className={`${styles.ctaWrapper} animate-fade-in`}>
             <button className={styles.mainCta}>

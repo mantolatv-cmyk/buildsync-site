@@ -12,6 +12,10 @@ const Footer = () => {
           <button className={styles.finalCta}>
             Assinar BuildSync Premium
           </button>
+          <p className={styles.description}>
+            A inteligência definitiva para gestão de obras e controle de KPIs imobiliários. 
+            Transforme seus projetos em ativos lucrativos com visão executiva e rentabilidade garantida.
+          </p>
         </div>
         
         <div className={styles.sitemap}>

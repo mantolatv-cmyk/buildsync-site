@@ -10,24 +10,24 @@ const TargetAudience = () => {
         <div className={styles.grid}>
           <div className={`${styles.audienceCard} ${styles.builders} glass`}>
             <div className={styles.content}>
-              <h2>Pequenos Construtores</h2>
-              <p>Escale sua construtora com margens previsíveis e relatórios profissionais de nível Enterprise. Impressione seus investidores com transparência total.</p>
+              <h2>Construtores de Alto Padrão</h2>
+              <p>Escale sua construtora com gestão de obras profissional e relatórios de nível Enterprise. Impressione seus clientes e parceiros com transparência total.</p>
               <ul className={styles.benefitList}>
-                <li>Relatórios em um clique</li>
-                <li>Gestão de múltiplos projetos</li>
-                <li>Dashboard de rentabilidade</li>
+                <li>Gestão financeira em um clique</li>
+                <li>KPIs de múltiplos projetos</li>
+                <li>Dashboard de rentabilidade real</li>
               </ul>
             </div>
           </div>
 
           <div className={`${styles.audienceCard} ${styles.homeowners} glass`}>
             <div className={styles.content}>
-              <h2>Casa Própria</h2>
-              <p>Construa o lar dos seus sonhos sem os pesadelos financeiros. Tenha clareza total do seu orçamento e evite desvios de custo inesperados.</p>
+              <h2>Investidores Imobiliários</h2>
+              <p>Maximize o retorno sobre o capital investido com dados precisos. Tenha clareza total do seu orçamento e garanta o ROI planejado da sua obra.</p>
               <ul className={styles.benefitList}>
-                <li>Controle de gastos por m²</li>
-                <li>Cronograma financeiro real</li>
-                <li>Alertas de desvio de custo</li>
+                <li>Controle de custos por m²</li>
+                <li>Cronograma financeiro executivo</li>
+                <li>Previsibilidade de rentabilidade</li>
               </ul>
             </div>
           </div>
