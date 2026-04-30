@@ -14,7 +14,7 @@ const Showcase = () => {
         </div>
 
         <div className={styles.grid}>
-          <div className={`${styles.imageWrapper} animate-fade-in`}>
+          <div className={`${styles.imageWrapper} ${styles.smallBox} animate-fade-in`}>
             <video 
               src="/assets/showcase-video.mp4" 
               autoPlay 

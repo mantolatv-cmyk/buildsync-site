@@ -20,8 +20,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
   gap: 3rem;
+  align-items: center;
 }
 
 .imageWrapper {
@@ -35,6 +36,15 @@
 
 .imageWrapper:hover {
   transform: translateY(-10px);
+}
+
+.smallBox {
+  transform: scale(0.9);
+  transform-origin: center right;
+}
+
+.smallBox:hover {
+  transform: scale(0.92) translateY(-10px);
 }
 
 .image {
