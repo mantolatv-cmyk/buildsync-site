@@ -31,8 +31,8 @@ const Showcase = () => {
 
           <div className={`${styles.imageWrapper} animate-fade-in`}>
             <Image 
-              src="/assets/showcase-2.jpg" 
-              alt="BuildSync Executive Dashboard" 
+              src="/assets/showcase-2.png" 
+              alt="BuildSync Technical View" 
               width={600}
               height={400}
               className={styles.image}
