@@ -20,7 +20,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 0.7fr 1fr;
+  grid-template-columns: 0.85fr 1fr;
   gap: 3rem;
   align-items: center;
 }
@@ -39,12 +39,12 @@
 }
 
 .smallBox {
-  transform: scale(0.9);
+  transform: scale(0.96);
   transform-origin: center right;
 }
 
 .smallBox:hover {
-  transform: scale(0.92) translateY(-10px);
+  transform: scale(0.98) translateY(-10px);
 }
 
 .image {
@@ -63,14 +63,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 2rem;
-  background: linear-gradient(to top, rgba(6, 9, 16, 0.9), transparent);
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(6, 9, 16, 0.95), transparent);
   color: white;
 }
 
 .caption h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
 }
 
 .caption p {
