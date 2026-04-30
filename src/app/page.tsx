@@ -11,9 +11,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div style={{ marginTop: '80px' }}>
-        <MetricsTicker />
-      </div>
+      <MetricsTicker />
       <Hero />
       <Features />
       <Showcase />
