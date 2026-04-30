@@ -15,11 +15,12 @@ const Showcase = () => {
 
         <div className={styles.grid}>
           <div className={`${styles.imageWrapper} animate-fade-in`}>
-            <Image 
-              src="/assets/showcase-1.png" 
-              alt="BuildSync 3D Model View" 
-              width={600}
-              height={400}
+            <video 
+              src="/assets/showcase-video.mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
               className={styles.image}
             />
             <div className={styles.caption}>
