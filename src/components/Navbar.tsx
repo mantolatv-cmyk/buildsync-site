@@ -5,22 +5,24 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav className={`${styles.navbar} ${styles.scrolled} glass`}>
+    <nav className={`${styles.navbar} glass`}>
       <div className="container">
-        <div className={styles.navWrapper}>
+        <div className={styles.navContainer}>
           <div className={styles.logo}>
             Build<span>Sync</span>
           </div>
           
-          <div className={styles.links}>
-            <a href="#funcionalidades">Funcionalidades</a>
-            <a href="#beneficios">Benefícios</a>
-            <a href="#depoimentos">Depoimentos</a>
+          <div className={styles.menu}>
+            <a href="#funcionalidades" className={styles.navLink}>Funcionalidades</a>
+            <a href="#beneficios" className={styles.navLink}>Benefícios</a>
+            <a href="#depoimentos" className={styles.navLink}>Depoimentos</a>
           </div>
 
-          <button className={styles.ctaButton}>
-            Começar Agora
-          </button>
+          <div className={styles.actions}>
+            <button className={styles.ctaButton}>
+              Começar Agora
+            </button>
+          </div>
         </div>
       </div>
     </nav>

@@ -7,16 +7,11 @@
   display: flex;
   align-items: center;
   z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border-bottom: 1px solid transparent;
-}
-
-.scrolled {
-  height: 70px;
-  background: rgba(6, 9, 16, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  background: rgba(6, 9, 16, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
 }
 
 .navContainer {
@@ -27,65 +22,93 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--text-primary);
+  letter-spacing: -0.04em;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .logo span {
   color: var(--primary);
+  text-shadow: 0 0 15px var(--primary-glow);
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
 
 .menu {
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
+  align-items: center;
 }
 
 .navLink {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
   position: relative;
+  letter-spacing: 0.02em;
 }
 
 .navLink:hover {
-  color: var(--text-primary);
+  color: white;
 }
 
 .navLink::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
+  bottom: -6px;
+  left: 50%;
   width: 0;
   height: 2px;
   background: var(--primary);
-  transition: width 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px var(--primary-glow);
 }
 
 .navLink:hover::after {
   width: 100%;
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+}
+
 .ctaButton {
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.7rem 1.8rem;
+  border-radius: 100px;
   background: var(--primary);
   color: white;
-  font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .ctaButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.5);
+  box-shadow: 0 12px 25px rgba(0, 122, 255, 0.5);
   background: #0084ff;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .menu {
     display: none;
+  }
+  
+  .navbar {
+    height: 70px;
   }
 }
