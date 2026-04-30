@@ -18,8 +18,7 @@
 
 .heroBg {
   object-fit: cover;
-  transform: scale(1.1);
-  filter: brightness(0.6);
+  filter: brightness(0.5);
 }
 
 .overlay {
