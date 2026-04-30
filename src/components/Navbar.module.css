@@ -104,12 +104,42 @@
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+.mobileToggle {
+  display: none;
+  background: none;
+  color: white;
+  margin-left: 1rem;
+}
+
 @media (max-width: 968px) {
   .menu {
-    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: -1;
   }
   
-  .navbar {
-    height: 70px;
+  .menuOpen {
+    transform: translateY(0);
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .ctaButton {
+    display: none;
+  }
+
+  .navContainer {
+    padding: 0 1.5rem;
   }
 }
