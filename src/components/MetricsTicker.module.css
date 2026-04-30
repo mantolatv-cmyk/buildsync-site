@@ -1,0 +1,45 @@
+.tickerContainer {
+  background: rgba(0, 122, 255, 0.05);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 50;
+}
+
+.tickerWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  white-space: nowrap;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.1em;
+}
+
+.value {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: monospace;
+}
+
+@media (max-width: 1024px) {
+  .tickerWrapper {
+    gap: 2rem;
+    padding: 0 1rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}

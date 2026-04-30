@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className={`${styles.visualContent} float`}>
+        <div className={`${styles.visualContent} float-slow`}>
           <div className={styles.mockupWrapper}>
             <Image 
               src="/assets/dashboard-mockup.png" 
@@ -46,6 +46,17 @@ const Hero = () => {
               className={styles.mockup}
             />
             <div className={styles.glowEffect}></div>
+            
+            {/* Floating Badges */}
+            <div className={`${styles.floatingBadge} ${styles.badge1} glass`}>
+              <div className="badge badge-green">ROI +14.2%</div>
+            </div>
+            <div className={`${styles.floatingBadge} ${styles.badge2} glass`}>
+              <div className="badge badge-blue">Custo m²: R$ 4.2k</div>
+            </div>
+            <div className={`${styles.floatingBadge} ${styles.badge3} glass`}>
+              <div className="badge badge-blue">Status: No Prazo</div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import MetricsTicker from '@/components/MetricsTicker';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Showcase from '@/components/Showcase';
@@ -10,6 +11,9 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <div style={{ marginTop: '80px' }}>
+        <MetricsTicker />
+      </div>
       <Hero />
       <Features />
       <Showcase />

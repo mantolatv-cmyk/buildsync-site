@@ -14,19 +14,40 @@ const Footer = () => {
           </button>
         </div>
         
-        <div className={styles.divider}></div>
-        
+        <div className={styles.sitemap}>
+          <div className={styles.column}>
+            <h4>Produto</h4>
+            <a href="#">Dashboard</a>
+            <a href="#">Integrações</a>
+            <a href="#">Relatórios</a>
+            <a href="#">Mobile App</a>
+          </div>
+          <div className={styles.column}>
+            <h4>Soluções</h4>
+            <a href="#">Pequenas Construtoras</a>
+            <a href="#">Investidores</a>
+            <a href="#">Residencial de Luxo</a>
+            <a href="#">Gestão de ROI</a>
+          </div>
+          <div className={styles.column}>
+            <h4>Empresa</h4>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Blog Executivo</a>
+            <a href="#">Contato</a>
+          </div>
+          <div className={styles.column}>
+            <h4>Legal</h4>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Compliance</a>
+            <a href="#">Segurança</a>
+          </div>
+        </div>
         <div className={styles.bottom}>
           <div className={styles.logo}>
             Build<span>Sync</span>
           </div>
-          
-          <div className={styles.links}>
-            <a href="#">Privacidade</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Suporte</a>
-          </div>
-          
           <div className={styles.copyright}>
             © 2026 BuildSync. Todos os direitos reservados.
           </div>
