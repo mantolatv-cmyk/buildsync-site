@@ -10,9 +10,10 @@ const Hero = () => {
       <div className={styles.bgWrapper}>
         <Image 
           src="/assets/hero-bg.png" 
-          alt="Luxury Office Background" 
+          alt="BuildSync Digital Blueprint" 
           fill
           priority
+          unoptimized
           className={styles.heroBg}
         />
         <div className={styles.overlay}></div>
