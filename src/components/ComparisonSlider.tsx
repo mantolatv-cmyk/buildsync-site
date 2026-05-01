@@ -41,7 +41,7 @@ const ComparisonSlider = () => {
               <h3>Comando BuildSync</h3>
               <ul>
                 <li>✅ Tempo Real (WhatsApp)</li>
-                <li>✅ Acurácia de 99.8%</li>
+                <li>✅ Precisão de 99.8%</li>
                 <li>✅ Rentabilidade Garantida</li>
               </ul>
             </div>

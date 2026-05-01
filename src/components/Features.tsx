@@ -44,7 +44,7 @@ const Features = () => {
               <p>{feature.description}</p>
               <div className={styles.miniStats}>
                 <div className={styles.miniStat}>
-                  <span className={styles.statLabel}>Acurácia:</span>
+                  <span className={styles.statLabel}>Precisão:</span>
                   <span className={styles.statValue}>99.8%</span>
                 </div>
                 <div className={styles.statDivider}></div>
