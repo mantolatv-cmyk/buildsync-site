@@ -167,6 +167,8 @@ button {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
+  padding-right: 0.15em;
+  display: inline-block;
 }
 
 .mouse-follower {
