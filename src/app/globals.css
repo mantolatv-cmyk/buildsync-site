@@ -9,7 +9,8 @@
   --text-primary: #FFFFFF;
   --text-secondary: #8B949E;
   --border: rgba(255, 255, 255, 0.08);
-  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-inter: var(--font-inter), 'Inter', sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', serif;
   --grid-color: rgba(0, 122, 255, 0.05);
   --glass: rgba(10, 15, 28, 0.7);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -145,7 +146,7 @@ button {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -153,10 +154,29 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--surface-hover);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.mouse-follower {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 122, 255, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
 }

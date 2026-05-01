@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  background: #000;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.wrapper {
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.label {
+  color: var(--text-secondary);
+}
+
+.value {
+  color: white;
+  font-family: monospace;
+}
+
+.up { color: var(--accent); }
+.down { color: #ff4d4d; }
+.neutral { color: var(--text-secondary); }
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 2rem;
+    animation: ticker 15s linear infinite;
+  }
+}

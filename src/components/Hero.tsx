@@ -22,7 +22,7 @@ const Hero = () => {
       <div className={`container ${styles.content}`}>
         <div className={styles.textContent}>
           <h1 className="animate-fade-in">
-            Inteligência em <span>Gestão de Obras</span> <br />
+            <span className="serif">Inteligência</span> em <span>Gestão de Obras</span> <br />
             de Alto Padrão.
           </h1>
           <p className="animate-fade-in">
@@ -57,6 +57,16 @@ const Hero = () => {
             </div>
             <div className={`${styles.floatingBadge} ${styles.badge3} glass`}>
               <div className="badge badge-blue">Status: No Prazo</div>
+            </div>
+
+            {/* Hotspots */}
+            <div className={`${styles.hotspot} ${styles.spot1}`}>
+              <div className={styles.pulse}></div>
+              <div className={styles.tooltip}>Gestão de Insumos</div>
+            </div>
+            <div className={`${styles.hotspot} ${styles.spot2}`}>
+              <div className={styles.pulse}></div>
+              <div className={styles.tooltip}>Fluxo de Caixa</div>
             </div>
           </div>
         </div>

@@ -19,6 +19,7 @@ const Navbar = () => {
           <a href="#whatsapp" className={styles.navLink} onClick={() => setIsOpen(false)}>WhatsApp AI</a>
           <a href="#roi-calculator" className={styles.navLink} onClick={() => setIsOpen(false)}>Calculadora ROI</a>
           <a href="#beneficios" className={styles.navLink} onClick={() => setIsOpen(false)}>Benefícios</a>
+          <a href="#faq" className={styles.navLink} onClick={() => setIsOpen(false)}>FAQ</a>
         </div>
 
         <div className={styles.actions}>
