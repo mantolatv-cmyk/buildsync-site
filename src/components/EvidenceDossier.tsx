@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import styles from './EvidenceDossier.module.css';
 import { Camera, FileCheck, Shield } from 'lucide-react';
 
@@ -15,13 +16,17 @@ const EvidenceDossier = () => {
                 <div className={styles.cardHeader}>
                   <Camera size={16} /> Foto de Obra #124
                 </div>
-                <div className={styles.imagePlaceholder}>Laje concluída - Setor A</div>
+                <div className={styles.imageContainer}>
+                  <Image src="/assets/evidence-1.png" alt="Obra Laje" fill className={styles.evidenceImage} />
+                </div>
               </div>
               <div className={`${styles.card} ${styles.card2}`}>
                 <div className={styles.cardHeader}>
-                  <FileCheck size={16} /> Nota Fiscal Emitida
+                  <FileCheck size={16} /> Evidência de Progresso
                 </div>
-                <div className={styles.docPlaceholder}>R$ 12.450,00 - Materiais</div>
+                <div className={styles.imageContainer}>
+                  <Image src="/assets/evidence-2.png" alt="Obra Interior" fill className={styles.evidenceImage} />
+                </div>
               </div>
             </div>
             <div className={styles.glow}></div>
